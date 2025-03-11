@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: url("bg.jpg") no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            color: #333;
+        }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .header {
+            background-color: #87CEFA;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .header nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        .header nav a:hover {
+            color: #FFB6C1;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 70%;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .mySlides {
+            display: none;
+        }
+        .mySlides img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .dots {
+            text-align: center;
+            padding: 10px;
+            background: #f2f2f2;
+            border-radius: 0 0 10px 10px;
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+        .section {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .section h1 {
+            color: #87CEFA;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .section img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .contact-info div {
+            width: 30%;
+            margin: 10px 0;
+        }
+        .contact-info img {
+            height: 40px;
+        }
+        .contact-info h2 {
+            color: #87CEFA;
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        .contact-info p a {
+            color: #87CEFA;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact-info p a:hover {
+            color: #FFB6C1;
+        }
+        .btn-back {
+            display: block;
+            width: 150px;
+            margin: 30px auto;
+            text-align: center;
+            background-color: #87CEFA;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: background-color 0.3s;
+        }
+        .btn-back:hover {
+            background-color: #FFB6C1;
+        }
+        @media (max-width: 768px) {
+            .contact-info div {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container">
+        <h1>UNIT KESIHATAN UITM TAPAH</h1>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="#About">About</a>
+            <a href="#Feedback">Feedback</a>
+            <a href="#Contact">Contact Us</a>
+            <a href="chooseUser.html">Login</a>
+        </nav>
+    </div>
+</header>
+
+<!-- SLIDESHOW -->
+<div class="slideshow-container container">
+    <div class="mySlides">
+        <img src="img/uk1.jpg" alt="Slide 1">
+    </div>
+    <div class="mySlides">
+        <img src="img/uk2.jpg" alt="Slide 2">
+    </div>
+    <div class="mySlides">
+        <img src="img/uk3.jpg" alt="Slide 3">
+    </div>
+    <div class="mySlides">
+        <img src="img/uk4.jpg" alt="Slide 4">
+    </div>
+    <div class="mySlides">
+        <img src="img/uk5.jpg" alt="Slide 5">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div class="dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<!-- ABOUT SECTION -->
+<section class="section about" id="About" align="center">
+    <div class="container">
+        <h1>About</h1>
+        <div>
+            <h3>BACKGROUND</h3>
+            <p>Unit Kesihatan Uitm Tapah has started long ago since Uitm Tapah has operated. This place operation hours start from 8 am in the morning till 5 pm in the evening every Monday till Friday.</p>
+            <h3>MISSION AND VISION</h3>
+            <p>Our vision is to create a systematic appointment system for the entire campus. Our mission is to help those people in need.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FEEDBACK SECTION -->
+<section class="section feedback" id="Feedback" align="center">
+    <div class="container">
+        <h1>Feedback</h1>
+        <div>
+            <!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type=text], input[type=email], textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type=submit] {
+            background-color: #89CFF0; /* Baby blue */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        input[type=submit]:hover {
+            background-color: #66B2FF;
+        }
+    </style>
+</head>
+<body>
+
+<form method="post" action="feedback.php">
+    <label for="Name">Name:</label>
+    <input type="text" id="Name" name="Name" required>
+
+    <label for="Email">Email:</label>
+    <input type="email" id="Email" name="Email" required>
+
+    <label for="Feedback">Feedback:</label>
+    <textarea id="Feedback" name="Feedback" rows="4" required></textarea>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section contact" id="Contact" align="center">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <div>
+                <h2>Contact Number</h2>
+                <p>+605-406 7000</p>
+            </div>
+            <div>
+                <h2>Email</h2>
+                <p>pusatkesihatan@uitm.edu.my</p>
+            </div>
+            <div>
+                <h2>Facebook</h2>
+                <p>
+                    <a href="https://www.facebook.com/UkUiTMPerak/" target="_blank">Follow Us</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+</body>
+</html>

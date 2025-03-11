@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>STAFF</title>
+<style>
+body {
+  background-image: url('bgDashboard.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/* Centering the content */
+.container {
+  width: 85%;
+  margin: 80px auto; /* Centering the container */
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align: center;
+}
+th, td {
+  background-color: #FEFEFE;
+}
+body, td, th {
+  color: #FEFEFE;
+}
+#loginButton {
+  border-radius: 15px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #29088a;
+}
+#loginButton a {
+  color: #FEFEFE;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#title {
+  font-size: 24px;
+  color: purple;
+  font-family: Courier New, sans-serif;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* Back button styles */
+.back-button {
+  position: fixed;
+  top: 20px; /* Adjust the distance from the top */
+  right: 20px; /* Adjust the distance from the right */ 
+}
+.back-button button{
+  background-color: #87CEFA;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.back-button button:hover{
+  background-color: #001f4d;
+  color: #ffffff;
+}
+
+.reporting-button {
+  background-color: #87CEFA;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.reporting-button a {
+  color: #FEFEFE;
+  text-decoration: none;
+}
+
+.reporting-button:hover{
+  background-color: #001f4d;
+  color: #ffffff;
+}
+</style>
+</head>
+
+<body>
+
+<!--START HEADER-->
+<table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+ <tr>
+  <td>
+   <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+    <tr>
+     <td>
+      <img src="newLogo.png" height="100px">
+     </td>
+     <td>
+      <span id="title">HEALTH UNIT APPOINTMENT SYSTEM</span>
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<!--END HEADER-->
+
+<div class="container">
+
+<p></p>
+<table width="25%" border="1" align="center">
+  <tbody>
+  <tr></tr>
+</tbody>
+<tbody>
+  <tr>
+    <td height="70"><strong style="color:blue;">Approved Appointment</strong></td>
+  </tr>
+  <tr>
+    <td style="background-color:lightgreen;" height="45"><a href="staffSecond.html">View Details</a></td>
+  </tr>
+</tbody>
+<tbody>
+</tbody>
+</table>
+
+<p>&nbsp;</p>
+<table width="25%" border="1" align="center">
+  <tbody>
+    <tr></tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td height="70"><strong style="color:blue;">New Appointment</strong></td>
+    </tr>
+    <tr>
+      <td style="background-color:yellow; height: 45px; color: black;" height="45"><a href="#">View Details</a></td>
+    </tr>
+  </tbody>
+  <tbody>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+
+<table width="25%" border="1" align="center">
+  <tbody>
+    <tr></tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td height="70"><strong style="color:blue;">Rejected Appointment</strong></td>
+    </tr>
+    <tr>
+      <td style="background-color:red;" height="45"><a href="staffCancelled.html">View Details</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>&nbsp;</p>
+<table width="25%" border="1" align="center">
+  <tbody>
+    <tr></tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td height="70"><strong style="color:blue;">Total Appointment</strong></td>
+    </tr>
+    <tr>
+      <td style="background-color:orange;" height="45"><a href="appointment.php">View Details</a></td>
+    </tr>
+  </tbody>
+  <tbody>
+  </tbody>
+</table>
+
+<!-- Reporting Button -->
+<div class="back-button">
+  <button><a href="dashboardDoc.html">Back</a></button>
+</div>
+
+
+</body>
+</html>
